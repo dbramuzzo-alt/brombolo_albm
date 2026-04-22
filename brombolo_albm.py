@@ -80,7 +80,7 @@ if st.sidebar.button("Scarica i 200 Album"):
                         "Artista": e.artist
                     })
                 
-                df_finale = pd.concat([df_storico, pd.DataFrame(nuowe_righe)], ignore_index=True)
+                df_finale = pd.concat([df_storico, pd.DataFrame(nuove_righe)], ignore_index=True)
                 salva_su_github(df_finale)
                 
                 st.success(f"✅ Classifica {data_ok} salvata!")
